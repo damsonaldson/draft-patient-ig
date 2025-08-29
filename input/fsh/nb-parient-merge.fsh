@@ -7,16 +7,16 @@ Description: "Patient profile for $merge operations to provincial systems in New
 // Require meta and extension for submitter
 * meta 1..1
 * meta.source 1..1
-* meta.extension contains data-submitter 1..1
 
 // Require at least the source and target patient identifiers
+/*
 * parameter contains
     source-patient 0..1 and
     source-patient-identifier 1..1 and
     target-patient 0..1 and
     target-patient-identifier 1..1 and
     result-patient 0..1
-
+*/
 /* Slices for parameters
 * parameter[source-patient].name = "source-patient"
 * parameter[source-patient].valueReference only Reference(Patient)
